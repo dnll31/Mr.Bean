@@ -1,0 +1,276 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav{
+    min-height: 100vh;
+    background: url(Bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 100%;
+    height: auto;
+}
+nav ul{
+    box-shadow: 3px 3px 5px gray;
+    width:100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color:#3d220530;
+}
+nav li{
+
+    height: 50px;
+}
+nav a{
+    height:100%;
+    padding: 0 30px;
+    display:flex;
+    text-decoration: none;
+    align-items: center;
+    color: #3d2205;
+}
+nav a:hover{
+    background-color: white;
+}
+nav a:after{
+    background-color: white;
+}
+nav li:first-child{
+    margin-right: auto;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+.sidebar{
+    position:fixed;
+    top: 0;
+    right:0;
+    height:100vh ;
+    width:250px;
+    z-index:999;
+    background-color: rgba(95, 72, 72, 0.254);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px black;
+    display: none;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width:100%;
+}
+.sidebar a{
+    width:100%;
+}
+.menu-button{
+    display: none;
+  }
+.shipping p{
+    padding: 15px;
+    text-align: center;
+    font-size: large;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.shipping{
+   
+    background-color: #F5F5F5;
+    height: 50px;
+}
+.logo p{
+   padding: 30px;
+   text-align: center;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-weight: bold;
+   font-size:150px;
+   color: #ffffff;
+}
+.logo{
+    margin-top:120px;
+    background-color: #3F2305;
+    height:250px;
+}
+.fresh{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    background-color: rgb(255, 255, 255);
+    height: 150px;
+    gap: 5px;
+
+}
+.fresh div{
+    background-color: #DFD7BF;
+    text-align: center;
+}
+.fresh div:hover{
+    background-color: #3F2305;
+    color: #F5F5F5;
+}
+.fresh h1{
+    margin-top: 35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.fresh p{
+    font-size: 20px;
+    margin-top: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.about{
+    background-color: #3d220530;
+    height: 200px;
+    margin-top: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: auto;
+    justify-content: center;
+}
+.about h1{
+   padding-top: 30px;
+    text-align: center;
+}
+.about p{
+    text-align: center;
+    font-size: 21px;
+    margin: 10px;
+}
+.vision{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    height: 400px;
+    gap: 20px;
+}
+.vh{
+    padding: 10px;
+    flex: 50%;
+}
+.vision div{
+    text-align: center;
+    width: 500px;
+}
+.vision h1{
+    margin-top: 70px;
+}
+.vision p{
+    font-size: 20px;
+}
+.vimage{
+    border-radius: 20px;
+    margin: 40px;
+    background-image: url(coffee-beans.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10px;
+    flex: 50%;
+}
+.mission{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    height: 400px;
+    gap: 20px;
+}
+.mh{
+    padding: 10px;
+    flex: 50%;
+}
+.mission div{
+    text-align: center;
+    width: 500px;
+}
+.mission h1{
+    margin-top: 70px;
+}
+.mission p{
+    font-size: 20px;
+}
+.mimage{
+    border-radius: 20px;
+    margin: 50px;
+    background-image: url(farm.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10px;
+    flex: 50%;
+}
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+  }
+  .contact-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .contact-info p {
+    margin: 10px;
+    font-size: 16px;
+  }
+  .social-media-links {
+    margin-top: 20px;
+  }
+  .social-media-links a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .social-media-links a:hover {
+    color: #55acee; /* Twitter blue */
+  }
+  @media(max-width: 800px){
+    
+    .hideOnMobile{
+      display: none;
+    }
+    .menu-button{
+      display: block;
+    }
+    .logo p{
+        font-size: 90px;
+    }
+    .logo{
+        height: 190px;
+    }
+    .fresh p{
+        font-size: 15px;
+    }
+    .fresh h1{
+        font-size: 20px;
+    }
+    .about {
+        height: 300px;
+        font-size: medium;
+    }
+    .mission{
+        font-size: medium;
+        height: 600px;
+        flex-direction: column-reverse;
+    }
+    .vision{
+        font-size: medium;
+        height: 600px;
+        flex-direction: column;
+    }
+    
+    
+}
+  @media(max-width: 400px){
+    .sidebar{
+      width: 100%;
+    }
+  }
